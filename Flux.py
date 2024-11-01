@@ -34,7 +34,7 @@ def closestNumber(n, m):
         return n1
     return n2
 
-def generate_image(request):
+def generate_image():
     # data = request.get_json()
     # prompt = data.get("prompt")
     # height = data.get("height")
@@ -69,3 +69,5 @@ def generate_image(request):
         Image.fromarray(np.array(decoded*255, dtype=np.uint8)[0]).save("Output_images/flux.png")
 
     Image.fromarray(np.array(decoded*255, dtype=np.uint8)[0])
+
+generate_image()
