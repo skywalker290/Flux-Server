@@ -35,11 +35,14 @@ def closestNumber(n, m):
     return n2
 
 def generate_image(request):
-    data = request.get_json()
-    prompt = data.get("prompt")
-    height = data.get("height")
-    width = data.get("width")
+    # data = request.get_json()
+    # prompt = data.get("prompt")
+    # height = data.get("height")
+    # width = data.get("width")
 
+    prompt = "random image"
+    height = 400
+    width = 300
     with torch.inference_mode():
         positive_prompt = prompt
         width = width
