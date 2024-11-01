@@ -83,7 +83,7 @@ def generate_image():
     with torch.inference_mode():
         positive_prompt = prompt
         seed = 0
-        steps = 4
+        steps = 2
         sampler_name = "euler"
         scheduler = "simple"
 
